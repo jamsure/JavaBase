@@ -37,7 +37,8 @@ public class ReaderWriterDemo {
 		OutputStream out2 = new FileOutputStream(file2,true);
 		Writer writer = new OutputStreamWriter(out2, "GBK");
 		
-		//String enString ="\r\n+++++China People! ++++2++++";
+		
+		String enString ="\r\n+++++China People! ++++2++++";
 		String chString ="\r\n+++++中国人民从此站起来了! ++++2++++";
 		//writer.write(enString);
 		writer.write(chString);
