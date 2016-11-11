@@ -13,9 +13,9 @@ public class BufferInputStreamDemo {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		PrintStream out = System.out;
-		File pdfFile = new File("/home/deepin/结婚照原始及精修片(CD1).iso");
-		File pdfFile2 = new File("/home/deepin/结婚照原始及精修片(CD1)BK.iso");
-		File pdfFile3 = new File("/home/deepin/结婚照原始及精修片(CD1)BK2.iso");
+		File pdfFile = new File("D:\\Vedeo\\Vedeo.zip");
+		File pdfFile2 = new File("D:\\Vedeo\\VedeoBK.iso");
+		File pdfFile3 = new File("D:\\Vedeo\\VedeoBK2.iso");
 		unUseBufferCopyFile(out, pdfFile, pdfFile2);
 		out.println("等待8S中...");
 		Thread.sleep(8000);
@@ -32,7 +32,7 @@ public class BufferInputStreamDemo {
 		byte[] unit = new byte[4096];// 数组的大小为4KB,作为数据的传输单元
 		long start = System.currentTimeMillis();
 		out.println("使用缓冲器--现在的开始时间毫秒是：" + start + " ms");
-		/*while (bis.available() > 0) {
+		while (bis.available() > 0) {
 			if (bis.available() >= 4096) {
 				bis.read(unit);
 				bos.write(unit);
@@ -42,7 +42,7 @@ public class BufferInputStreamDemo {
 				bis.read(remain);
 				bos.write(remain);
 			}
-		}*/
+		}
 		//bos = bis.;
 		bis.close();
 		bos.flush();

@@ -3,6 +3,7 @@ package com.ddb.javacore.generic;
 import java.util.ArrayList;
 
 public class GenericDemo {
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		// JDK 1.5之前
 		// Collection1里面可存放整数，字符,布尔，字符串...

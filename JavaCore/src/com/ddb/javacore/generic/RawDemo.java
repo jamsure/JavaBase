@@ -1,6 +1,7 @@
 package com.ddb.javacore.generic;
 
 class RawDemo {
+	@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 	public static void main(String args[]) {
 		Gen<Integer> iOb = new Gen<Integer>(88);
 		Gen<String> strOb = new Gen<String>("Generics Test");
